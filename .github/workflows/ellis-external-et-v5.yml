@@ -110,10 +110,15 @@ jobs:
               if s.count(before)!=1:
                   raise SystemExit(f"Expected exactly one legacy library setting: {before}")
               s=s.replace(before,after)
+          if s.count("BOOST_DIR = /usr") != 1:
+              raise SystemExit("Unexpected BOOST_DIR setting")
+          if any(line.strip().startswith("BOOST_LIBS =") for line in s.splitlines()):
+              raise SystemExit("Unexpected existing BOOST_LIBS setting")
+          s=s.replace("BOOST_DIR = /usr","BOOST_DIR = /usr\nBOOST_LIBS = boost_filesystem")
           p.write_text(s)
           print("Updated optional link library names; physics unchanged")
           PY
-          grep -E '^(ADIOS2_LIBS|HDF5_LIBS) =' SpacetimeX/scripts/actions-cpu-real64.cfg
+          grep -E '^(ADIOS2_LIBS|HDF5_LIBS|BOOST_LIBS) =' SpacetimeX/scripts/actions-cpu-real64.cfg
           printf '%s\n' 'Available ADIOS2/HDF5 libraries:'
           find /usr/local/lib /usr/lib/x86_64-linux-gnu -maxdepth 4 -type f -o -type l 2>/dev/null | grep -E 'lib(adios2|hdf5)' | head -n 100 || true
 
