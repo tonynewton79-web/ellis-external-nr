@@ -1,8 +1,6 @@
-name: Ellis External Einstein Toolkit Reproduction
+name: Ellis External Einstein Toolkit Reproduction (legacy manual)
 
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 
 permissions:
