@@ -43,7 +43,7 @@ jobs:
           mkdir -p EllisDustX/src
           echo 'U1JDUyA9IGVsbGlzX2R1c3R4LmN4eAo=' | base64 -d > EllisDustX/src/make.code.defn
           mkdir -p par
-          echo 'QWN0aXZlVGhvcm5zID0gIgogIEFETUJhc2VYCiAgQ2FycGV0WAogIEVsbGlzRHVzdFgKICBGb3JtYWxpbmUKICBJT1V0aWwKICBPREVTb2x2ZXJzCiAgVG11bnVCYXNlWAogIFo0YwoiCgpDYWN0dXM6OmNjdGtfc2hvd19zY2hlZHVsZSA9IG5vCkNhY3R1czo6cHJlc3luY19tb2RlID0gIm1peGVkLWVycm9yIgpDYWN0dXM6OnRlcm1pbmF0ZSA9ICJ0aW1lIgpDYWN0dXM6OmNjdGtfZmluYWxfdGltZSA9IEBURU5EQAoKQ2FycGV0WDo6cG9pc29uX3VuZGVmaW5lZF92YWx1ZXMgPSBubwoKQ2FycGV0WDo6eG1pbiA9IDAuMApDYXJwZXRYOjp5bWluID0gMC4wCkNhcnBldFg6OnptaW4gPSAwLjAKQ2FycGV0WDo6eG1heCA9IDYuMjgzMTg1MzA3MTc5NTg2NDc2OQpDYXJwZXRYOjp5bWF4ID0gNi4yODMxODUzMDcxNzk1ODY0NzY5CkNhcnBldFg6OnptYXggPSA2LjI4MzE4NTMwNzE3OTU4NjQ3NjkKCkNhcnBldFg6Om5jZWxsc194ID0gQE5ACkNhcnBldFg6Om5jZWxsc195ID0gQE5ACkNhcnBldFg6Om5jZWxsc196ID0gQE5ACkNhcnBldFg6OmJsb2NraW5nX2ZhY3Rvcl94ID0gOApDYXJwZXRYOjpibG9ja2luZ19mYWN0b3JfeSA9IDgKQ2FycGV0WDo6YmxvY2tpbmdfZmFjdG9yX3ogPSA4CkNhcnBldFg6Omdob3N0X3NpemUgPSAzCgpEcml2ZXI6OnBlcmlvZGljID0gInllcyIKRHJpdmVyOjpwZXJpb2RpY194ID0geWVzCkRyaXZlcjo6cGVyaW9kaWNfeSA9IHllcwpEcml2ZXI6OnBlcmlvZGljX3ogPSB5ZXMKCiMgVXNlIHRoZSBzYW1lIHBoeXNpY2FsIHRpbWUgaW5jcmVtZW50IGFzIHRoZSBpbnRlcm5hbCByZWZlcmVuY2UgcmVwbGF5LgpDYXJwZXRYOjp0aW1lc3RlcF9jaG9pY2UgPSAidGltZXN0ZXAiCkNhcnBldFg6OnRpbWVzdGVwID0gMC4wMDAyNQoKT0RFU29sdmVyczo6bWV0aG9kID0gIlJLNCIKCkFETUJhc2VYOjppbml0aWFsX2RhdGEgPSAibm9uZSIKQURNQmFzZVg6OmluaXRpYWxfbGFwc2UgPSAibm9uZSIKQURNQmFzZVg6OmluaXRpYWxfc2hpZnQgPSAibm9uZSIKQURNQmFzZVg6OmluaXRpYWxfZHRsYXBzZSA9ICJub25lIgpBRE1CYXNlWDo6aW5pdGlhbF9kdHNoaWZ0ID0gIm5vbmUiCgpFbGxpc0R1c3RYOjpIMCA9IDEuMApFbGxpc0R1c3RYOjplcHNpbG9uID0gMC4xMgpFbGxpc0R1c3RYOjpBID0gMC4wOAoKIyBQaGFzZSBCOiBldm9sdmUgYWN0dWFsIFo0YyBUaGV0YSBhbmQgc3BhdGlhbCBaNCBjb25zdHJhaW50IGZpZWxkcy4KIyBGcmVlemUgbGFwc2UgYW5kIHNoaWZ0IHRvIHRoZSBwYXBlcidzIGdlb2Rlc2ljL2NvbW92aW5nIHNsaWNpbmcuClo0Yzo6c2V0X1RoZXRhX3plcm8gPSBubwpaNGM6OmZfbXVfTCA9IDAuMApaNGM6OmZfbXVfUyA9IDAuMApaNGM6OmV0YSA9IDAuMApaNGM6OmthcHBhMSA9IDAuMDIKWjRjOjprYXBwYTIgPSAwLjAKWjRjOjplcHNkaXNzID0gMC4wClo0Yzo6Ym91bmRhcnlfY29uZGl0aW9ucyA9ICJDYXJwZXRYIgpaNGM6OmNhbGNfY29uc3RyYWludHMgPSB5ZXMKCklPOjpvdXRfZGlyID0gIkBPVVRESVJAIgpJTzo6b3V0X2V2ZXJ5ID0gNDAKCiMgQ2FycGV0WCB3cml0ZXMgb25lIG5vcm0gZmlsZSBwZXIgdmFyaWFibGUgd2l0aCBtaW4sIG1heCwgTDEsIEwyIGFuZCBtYXhhYnMuCkNhcnBldFg6Om91dF9ub3JtX3ZhcnMgPSAiCiAgRWxsaXNEdXN0WDo6c3RhdGUKICBaNGM6OkhDCiAgWjRjOjpNdEMKICBaNGM6OlRoZXRhCiAgWjRjOjpadEMKICBaNGM6OmFsbEMKIgpDYXJwZXRYOjpvdXRfbm9ybV9ldmVyeSA9IDQwCgojIFBoYXNlIEEgaXMgZGVsaWJlcmF0ZWx5IGxpZ2h0d2VpZ2h0OiBubyAzRCBmaWVsZCBkdW1wcyB5ZXQuCkNhcnBldFg6Om91dF90c3YgPSBubwpDYXJwZXRYOjpvdXRfb3BlbnBtZF92YXJzID0gIiIKQ2FycGV0WDo6b3V0X3Bsb3RmaWxlX2dyb3VwcyA9ICIiCkNhcnBldFg6Om91dF9zaWxvX3ZhcnMgPSAiIgo=' | base64 -d > par/ellis_dust_z4c.template.par
+          echo 'QWN0aXZlVGhvcm5zID0gIgogIEFETUJhc2VYCiAgQ2FycGV0WAogIEVsbGlzRHVzdFgKICBGb3JtYWxpbmUKICBJT1V0aWwKICBPREVTb2x2ZXJzCiAgVG11bnVCYXNlWAogIFo0YwoiCgpDYWN0dXM6OmNjdGtfc2hvd19zY2hlZHVsZSA9IG5vCkNhY3R1czo6cHJlc3luY19tb2RlID0gIm1peGVkLWVycm9yIgpDYWN0dXM6OnRlcm1pbmF0ZSA9ICJ0aW1lIgpDYWN0dXM6OmNjdGtfZmluYWxfdGltZSA9IEBURU5EQAoKQ2FycGV0WDo6cG9pc29uX3VuZGVmaW5lZF92YWx1ZXMgPSBubwoKQ2FycGV0WDo6eG1pbiA9IDAuMApDYXJwZXRYOjp5bWluID0gMC4wCkNhcnBldFg6OnptaW4gPSAwLjAKQ2FycGV0WDo6eG1heCA9IDYuMjgzMTg1MzA3MTc5NTg2NDc2OQpDYXJwZXRYOjp5bWF4ID0gNi4yODMxODUzMDcxNzk1ODY0NzY5CkNhcnBldFg6OnptYXggPSA2LjI4MzE4NTMwNzE3OTU4NjQ3NjkKCkNhcnBldFg6Om5jZWxsc194ID0gQE5ACkNhcnBldFg6Om5jZWxsc195ID0gQE5ACkNhcnBldFg6Om5jZWxsc196ID0gQE5ACkNhcnBldFg6OmJsb2NraW5nX2ZhY3Rvcl94ID0gOApDYXJwZXRYOjpibG9ja2luZ19mYWN0b3JfeSA9IDgKQ2FycGV0WDo6YmxvY2tpbmdfZmFjdG9yX3ogPSA4CkNhcnBldFg6Omdob3N0X3NpemUgPSAzCgpEcml2ZXI6OnBlcmlvZGljID0gInllcyIKRHJpdmVyOjpwZXJpb2RpY194ID0geWVzCkRyaXZlcjo6cGVyaW9kaWNfeSA9IHllcwpEcml2ZXI6OnBlcmlvZGljX3ogPSB5ZXMKCiMgVXNlIHRoZSBzYW1lIHBoeXNpY2FsIHRpbWUgaW5jcmVtZW50IGFzIHRoZSBpbnRlcm5hbCByZWZlcmVuY2UgcmVwbGF5LgpDYXJwZXRYOjp0aW1lc3RlcF9jaG9pY2UgPSAidGltZXN0ZXAiCkNhcnBldFg6OnRpbWVzdGVwID0gMC4wMDAyNQoKT0RFU29sdmVyczo6bWV0aG9kID0gIlJLNCIKCkFETUJhc2VYOjppbml0aWFsX2RhdGEgPSAibm9uZSIKQURNQmFzZVg6OmluaXRpYWxfbGFwc2UgPSAibm9uZSIKQURNQmFzZVg6OmluaXRpYWxfc2hpZnQgPSAibm9uZSIKQURNQmFzZVg6OmluaXRpYWxfZHRsYXBzZSA9ICJub25lIgpBRE1CYXNlWDo6aW5pdGlhbF9kdHNoaWZ0ID0gIm5vbmUiCgpFbGxpc0R1c3RYOjpIMCA9IDEuMApFbGxpc0R1c3RYOjplcHNpbG9uID0gMC4xMgpFbGxpc0R1c3RYOjpBID0gMC4wOAoKIyBQaGFzZSBCOiBmcmVlbHkgZXZvbHZpbmcgWjRjIFRoZXRhLgojIEZyZWV6ZSBsYXBzZSBhbmQgc2hpZnQgdG8gdGhlIHBhcGVyJ3MgZ2VvZGVzaWMvY29tb3Zpbmcgc2xpY2luZy4KWjRjOjpzZXRfVGhldGFfemVybyA9IG5vClo0Yzo6Zl9tdV9MID0gMC4wClo0Yzo6Zl9tdV9TID0gMC4wClo0Yzo6ZXRhID0gMC4wClo0Yzo6a2FwcGExID0gMC4wMgpaNGM6OmthcHBhMiA9IDAuMApaNGM6OmVwc2Rpc3MgPSAwLjAKWjRjOjpib3VuZGFyeV9jb25kaXRpb25zID0gIkNhcnBldFgiClo0Yzo6Y2FsY19jb25zdHJhaW50cyA9IHllcwoKSU86Om91dF9kaXIgPSAiQE9VVERJUkAiCklPOjpvdXRfZXZlcnkgPSA0MAoKIyBDYXJwZXRYIHdyaXRlcyBvbmUgbm9ybSBmaWxlIHBlciB2YXJpYWJsZSB3aXRoIG1pbiwgbWF4LCBMMSwgTDIgYW5kIG1heGFicy4KQ2FycGV0WDo6b3V0X25vcm1fdmFycyA9ICIKICBFbGxpc0R1c3RYOjpzdGF0ZQogIFo0Yzo6SEMKICBaNGM6Ok10QwogIFo0Yzo6VGhldGEKICBaNGM6Olp0QwogIFo0Yzo6YWxsQwoiCkNhcnBldFg6Om91dF9ub3JtX2V2ZXJ5ID0gNDAKCiMgUGhhc2UgQSBpcyBkZWxpYmVyYXRlbHkgbGlnaHR3ZWlnaHQ6IG5vIDNEIGZpZWxkIGR1bXBzIHlldC4KQ2FycGV0WDo6b3V0X3RzdiA9IG5vCkNhcnBldFg6Om91dF9vcGVucG1kX3ZhcnMgPSAiIgpDYXJwZXRYOjpvdXRfcGxvdGZpbGVfZ3JvdXBzID0gIiIKQ2FycGV0WDo6b3V0X3NpbG9fdmFycyA9ICIiCg==' | base64 -d > par/ellis_dust_z4c.template.par
           mkdir -p scripts
           echo 'IyEvdXNyL2Jpbi9lbnYgcHl0aG9uMwpmcm9tIHBhdGhsaWIgaW1wb3J0IFBhdGgKaW1wb3J0IHN5cwoKcCA9IFBhdGgoc3lzLmFyZ3ZbMV0pCmxpbmVzID0gcC5yZWFkX3RleHQoKS5zcGxpdGxpbmVzKCkKa2VlcCA9IHsKICAgICJTcGFjZXRpbWVYL05ld1JhZFgiLAogICAgIlNwYWNldGltZVgvWjRjIiwKICAgICJTcGFjZXRpbWVYL0VsbGlzRHVzdFgiLAp9CgpvdXQgPSBbXQpmb3IgbGluZSBpbiBsaW5lczoKICAgIHMgPSBsaW5lLnN0cmlwKCkKICAgIGlmIHMuc3RhcnRzd2l0aCgiU3BhY2V0aW1lWC8iKSBhbmQgcyBub3QgaW4ga2VlcDoKICAgICAgICBjb250aW51ZQogICAgb3V0LmFwcGVuZChsaW5lKQoKIyBFbGxpc0R1c3RYIGlzIG91ciBsb2NhbCB0aG9ybiBhbmQgaXMgbm90IGluIHRoZSB1cHN0cmVhbSBsaXN0LgppZiAiU3BhY2V0aW1lWC9FbGxpc0R1c3RYIiBub3QgaW4ge3guc3RyaXAoKSBmb3IgeCBpbiBvdXR9OgogICAgdHJ5OgogICAgICAgIGkgPSBuZXh0KGkgZm9yIGksIHggaW4gZW51bWVyYXRlKG91dCkgaWYgeC5zdHJpcCgpID09ICJTcGFjZXRpbWVYL1o0YyIpCiAgICAgICAgb3V0Lmluc2VydChpICsgMSwgIlNwYWNldGltZVgvRWxsaXNEdXN0WCIpCiAgICBleGNlcHQgU3RvcEl0ZXJhdGlvbjoKICAgICAgICByYWlzZSBTeXN0ZW1FeGl0KCJDb3VsZCBub3QgZmluZCBTcGFjZXRpbWVYL1o0YyBpbiB1cHN0cmVhbSB0aG9ybiBsaXN0IikKCnAud3JpdGVfdGV4dCgiXG4iLmpvaW4ob3V0KSArICJcbiIpCgphY3R1YWwgPSBbeC5zdHJpcCgpIGZvciB4IGluIG91dCBpZiB4LnN0cmlwKCkuc3RhcnRzd2l0aCgiU3BhY2V0aW1lWC8iKV0KZXhwZWN0ZWQgPSBbIlNwYWNldGltZVgvTmV3UmFkWCIsICJTcGFjZXRpbWVYL1o0YyIsICJTcGFjZXRpbWVYL0VsbGlzRHVzdFgiXQppZiBzb3J0ZWQoYWN0dWFsKSAhPSBzb3J0ZWQoZXhwZWN0ZWQpOgogICAgcmFpc2UgU3lzdGVtRXhpdChmIk1pbmltYWwgU3BhY2V0aW1lWCB0aG9ybiBzZXQgbWlzbWF0Y2g6IHthY3R1YWx9IikKCnByaW50KCJNaW5pbWFsIFNwYWNldGltZVggdGhvcm4gc2V0OiIsIGFjdHVhbCkK' | base64 -d > scripts/patch_thornlist.py
           mkdir -p scripts
@@ -151,7 +151,12 @@ jobs:
           grep -q 'cctk_final_time = 0.18' generated_par/ellis_dust_z4c_N16.par
           grep -q 'ncells_x = 32' generated_par/ellis_dust_z4c_N32.par
           for f in generated_par/*.par; do
-            grep -q '^Z4c::set_Theta_zero = no
+            grep -q '^Z4c::set_Theta_zero = no$' "$f"
+            grep -q '^Z4c::kappa1 = 0.02$' "$f"
+            grep -q '^  Z4c::Theta$' "$f"
+            grep -q '^  Z4c::ZtC$' "$f"
+            grep -q '^  Z4c::allC$' "$f"
+          done
 
       - name: Execute external Einstein Toolkit evolution N16 N24 N32
         shell: bash
@@ -195,226 +200,6 @@ jobs:
             external_phaseA_metrics.json
             external_phaseB_metrics.json
             phaseB_gate_output.txt
-            external_metrics_stdout.txt
-            phaseA_gate_output.txt
-            workspace/Cactus/external_results/
-          if-no-files-found: warn
-          retention-days: 30
- "$f"
-            grep -q '^Z4c::kappa1 = 0.02
-
-      - name: Execute external Einstein Toolkit evolution N16 N24 N32
-        shell: bash
-        run: |
-          set -euxo pipefail
-          mkdir -p external_logs
-          for n in 16 24 32; do
-            par="${GITHUB_WORKSPACE}/generated_par/ellis_dust_z4c_N${n}.par"
-            log="${GITHUB_WORKSPACE}/external_logs/N${n}.log"
-            (cd "${GITHUB_WORKSPACE}/workspace/Cactus" && ./exe/cactus_sim "${par}") 2>&1 | tee "${log}"
-          done
-
-      - name: Collect CarpetX group-norm diagnostics
-        shell: bash
-        run: |
-          set -euxo pipefail
-          python3 scripts/collect_norms.py workspace/Cactus/external_results | tee external_metrics_stdout.txt
-
-      - name: Run Phase-A release gate
-        shell: bash
-        run: python3 scripts/phaseA_release_gate.py | tee phaseA_gate_output.txt
-
-      - name: Archive external evidence
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: ellis-einstein-toolkit-phase-a-v5
-          path: |
-            runner_identity.txt
-            EllisDustX/
-            par/
-            scripts/
-            generated_par/
-            SpacetimeX/scripts/spacetimex.th
-            workspace/Cactus/build.log
-            external_logs/
-            external_phaseA_metrics.json
-            external_metrics_stdout.txt
-            phaseA_gate_output.txt
-            workspace/Cactus/external_results/
-          if-no-files-found: warn
-          retention-days: 30
- "$f"
-            grep -q '^  Z4c::Theta
-
-      - name: Execute external Einstein Toolkit evolution N16 N24 N32
-        shell: bash
-        run: |
-          set -euxo pipefail
-          mkdir -p external_logs
-          for n in 16 24 32; do
-            par="${GITHUB_WORKSPACE}/generated_par/ellis_dust_z4c_N${n}.par"
-            log="${GITHUB_WORKSPACE}/external_logs/N${n}.log"
-            (cd "${GITHUB_WORKSPACE}/workspace/Cactus" && ./exe/cactus_sim "${par}") 2>&1 | tee "${log}"
-          done
-
-      - name: Collect CarpetX group-norm diagnostics
-        shell: bash
-        run: |
-          set -euxo pipefail
-          python3 scripts/collect_norms.py workspace/Cactus/external_results | tee external_metrics_stdout.txt
-
-      - name: Run Phase-A release gate
-        shell: bash
-        run: python3 scripts/phaseA_release_gate.py | tee phaseA_gate_output.txt
-
-      - name: Archive external evidence
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: ellis-einstein-toolkit-phase-a-v5
-          path: |
-            runner_identity.txt
-            EllisDustX/
-            par/
-            scripts/
-            generated_par/
-            SpacetimeX/scripts/spacetimex.th
-            workspace/Cactus/build.log
-            external_logs/
-            external_phaseA_metrics.json
-            external_metrics_stdout.txt
-            phaseA_gate_output.txt
-            workspace/Cactus/external_results/
-          if-no-files-found: warn
-          retention-days: 30
- "$f"
-            grep -q '^  Z4c::ZtC
-
-      - name: Execute external Einstein Toolkit evolution N16 N24 N32
-        shell: bash
-        run: |
-          set -euxo pipefail
-          mkdir -p external_logs
-          for n in 16 24 32; do
-            par="${GITHUB_WORKSPACE}/generated_par/ellis_dust_z4c_N${n}.par"
-            log="${GITHUB_WORKSPACE}/external_logs/N${n}.log"
-            (cd "${GITHUB_WORKSPACE}/workspace/Cactus" && ./exe/cactus_sim "${par}") 2>&1 | tee "${log}"
-          done
-
-      - name: Collect CarpetX group-norm diagnostics
-        shell: bash
-        run: |
-          set -euxo pipefail
-          python3 scripts/collect_norms.py workspace/Cactus/external_results | tee external_metrics_stdout.txt
-
-      - name: Run Phase-A release gate
-        shell: bash
-        run: python3 scripts/phaseA_release_gate.py | tee phaseA_gate_output.txt
-
-      - name: Archive external evidence
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: ellis-einstein-toolkit-phase-a-v5
-          path: |
-            runner_identity.txt
-            EllisDustX/
-            par/
-            scripts/
-            generated_par/
-            SpacetimeX/scripts/spacetimex.th
-            workspace/Cactus/build.log
-            external_logs/
-            external_phaseA_metrics.json
-            external_metrics_stdout.txt
-            phaseA_gate_output.txt
-            workspace/Cactus/external_results/
-          if-no-files-found: warn
-          retention-days: 30
- "$f"
-            grep -q '^  Z4c::allC
-
-      - name: Execute external Einstein Toolkit evolution N16 N24 N32
-        shell: bash
-        run: |
-          set -euxo pipefail
-          mkdir -p external_logs
-          for n in 16 24 32; do
-            par="${GITHUB_WORKSPACE}/generated_par/ellis_dust_z4c_N${n}.par"
-            log="${GITHUB_WORKSPACE}/external_logs/N${n}.log"
-            (cd "${GITHUB_WORKSPACE}/workspace/Cactus" && ./exe/cactus_sim "${par}") 2>&1 | tee "${log}"
-          done
-
-      - name: Collect CarpetX group-norm diagnostics
-        shell: bash
-        run: |
-          set -euxo pipefail
-          python3 scripts/collect_norms.py workspace/Cactus/external_results | tee external_metrics_stdout.txt
-
-      - name: Run Phase-A release gate
-        shell: bash
-        run: python3 scripts/phaseA_release_gate.py | tee phaseA_gate_output.txt
-
-      - name: Archive external evidence
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: ellis-einstein-toolkit-phase-a-v5
-          path: |
-            runner_identity.txt
-            EllisDustX/
-            par/
-            scripts/
-            generated_par/
-            SpacetimeX/scripts/spacetimex.th
-            workspace/Cactus/build.log
-            external_logs/
-            external_phaseA_metrics.json
-            external_metrics_stdout.txt
-            phaseA_gate_output.txt
-            workspace/Cactus/external_results/
-          if-no-files-found: warn
-          retention-days: 30
- "$f"
-          done
-
-      - name: Execute external Einstein Toolkit evolution N16 N24 N32
-        shell: bash
-        run: |
-          set -euxo pipefail
-          mkdir -p external_logs
-          for n in 16 24 32; do
-            par="${GITHUB_WORKSPACE}/generated_par/ellis_dust_z4c_N${n}.par"
-            log="${GITHUB_WORKSPACE}/external_logs/N${n}.log"
-            (cd "${GITHUB_WORKSPACE}/workspace/Cactus" && ./exe/cactus_sim "${par}") 2>&1 | tee "${log}"
-          done
-
-      - name: Collect CarpetX group-norm diagnostics
-        shell: bash
-        run: |
-          set -euxo pipefail
-          python3 scripts/collect_norms.py workspace/Cactus/external_results | tee external_metrics_stdout.txt
-
-      - name: Run Phase-A release gate
-        shell: bash
-        run: python3 scripts/phaseA_release_gate.py | tee phaseA_gate_output.txt
-
-      - name: Archive external evidence
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: ellis-einstein-toolkit-phase-a-v5
-          path: |
-            runner_identity.txt
-            EllisDustX/
-            par/
-            scripts/
-            generated_par/
-            SpacetimeX/scripts/spacetimex.th
-            workspace/Cactus/build.log
-            external_logs/
-            external_phaseA_metrics.json
             external_metrics_stdout.txt
             phaseA_gate_output.txt
             workspace/Cactus/external_results/
