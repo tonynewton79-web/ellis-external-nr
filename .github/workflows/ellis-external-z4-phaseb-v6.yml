@@ -1,8 +1,6 @@
 name: Ellis External Z4c Free-Theta Phase B v6
 
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 
 permissions:

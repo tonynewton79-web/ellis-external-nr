@@ -1,0 +1,19 @@
+IMPLEMENTS: EllisBeamX
+INHERITS: ADMBaseX TmunuBaseX
+USES INCLUDE HEADER: loop.hxx
+
+CCTK_REAL state TYPE=gf TAGS='rhs="rhs"'
+{
+  rho8pi
+  beamplus8pi
+  beamminus8pi
+  R_Ellis
+} "Dust and two null beams with local volume scale"
+
+CCTK_REAL rhs TYPE=gf TAGS='checkpoint="no"'
+{
+  rho8pi_rhs
+  beamplus8pi_rhs
+  beamminus8pi_rhs
+  R_Ellis_rhs
+} "Matter and volume scale RHS"

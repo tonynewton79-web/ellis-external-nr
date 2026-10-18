@@ -1,0 +1,9 @@
+RESTRICTED:
+CCTK_REAL H0 "Initial expansion"
+{
+  0:* :: "nonnegative"
+} 1.0
+CCTK_REAL rad8pi "Initial total 8pi-scaled radiation energy density"
+{
+  0:2.99 :: "leaves positive initial dust for H0=1"
+} 0.12

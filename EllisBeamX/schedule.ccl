@@ -1,0 +1,48 @@
+STORAGE: state
+STORAGE: rhs
+
+SCHEDULE EllisBeamX_InitialGeometry IN ADMBaseX_InitialData
+{
+  LANG: C
+  WRITES: ADMBaseX::metric(everywhere) ADMBaseX::curv(everywhere)
+  WRITES: state(everywhere)
+} "Homogeneous Bianchi I constraint-satisfying initial data"
+SCHEDULE EllisBeamX_InitialGauge IN ADMBaseX_InitialGauge
+{
+  LANG: C
+  WRITES: ADMBaseX::lapse(everywhere) ADMBaseX::dtlapse(everywhere)
+  WRITES: ADMBaseX::shift(everywhere) ADMBaseX::dtshift(everywhere)
+} "Geodesic gauge"
+SCHEDULE EllisBeamX_AddTmunu IN TmunuBaseX_AddToTmunu
+{
+  LANG: C
+  READS: state(interior)
+  READS: ADMBaseX::metric(interior)
+  WRITES: TmunuBaseX::eTtt(interior)
+  WRITES: TmunuBaseX::eTti(interior)
+  WRITES: TmunuBaseX::eTij(interior)
+} "Add dust and antipodal-beam stress energy"
+SCHEDULE EllisBeamX_SetTmunuRHS IN ODESolvers_RHS BEFORE Z4c_RHSGroup
+{
+  LANG: C
+  READS: state(interior)
+  READS: ADMBaseX::metric(interior)
+  WRITES: TmunuBaseX::eTtt(interior)
+  WRITES: TmunuBaseX::eTti(interior)
+  WRITES: TmunuBaseX::eTij(interior)
+} "Update RK4 stage stress energy"
+SCHEDULE EllisBeamX_RHS IN ODESolvers_RHS BEFORE Z4c_RHSGroup
+{
+  LANG: C
+  READS: state(interior)
+  READS: ADMBaseX::metric(interior)
+  READS: ADMBaseX::curv(interior)
+  READS: ADMBaseX::lapse(interior)
+  WRITES: rhs(interior)
+} "Conserve dust and each x-directed null beam"
+SCHEDULE EllisBeamX_Boundaries IN ODESolvers_PostStep
+{
+  LANG: C
+  OPTIONS: global
+  SYNC: state
+} "Periodic sync"
